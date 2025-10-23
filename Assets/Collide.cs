@@ -1,23 +1,21 @@
 using UnityEngine;
 
-public class open : MonoBehaviour
+public class Collide : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
     }
-
+    public float Ammo = 0;
     // Update is called once per frame
     void Update()
     {
         
     }
 
-    void OnTriggerEnter() {
-        GameObject parent = transform.parent.gameObject;       
-        Animation animation = parent.GetComponent<Animation>();       
-        animation.Play("OpenDoor");
-        
+    void OnTriggerEnter(Collider other) {
+        Ammo += 20;
+        GameObject.SetActive(false);   
     }
 }
