@@ -16,7 +16,9 @@ public class open : MonoBehaviour
 
     void OnTriggerEnter() {
         GameObject parent = transform.parent.gameObject;       
-        Animation animation = parent.GetComponent<Animation>();       
+        Animation animation = parent.GetComponent<Animation>();    
+        AudioSource doorOpen = GetComponent<AudioSource>(); 
+        doorOpen.Play();   
         animation.Play("OpenDoor");
         
     }
