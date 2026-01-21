@@ -11,6 +11,7 @@ public class Grey : MonoBehaviour
     }
 
     // Update is called once per frame
+    /*
     void Update()
     {
         GameObject crosshair = image.Crosshair; 
@@ -22,4 +23,5 @@ public class Grey : MonoBehaviour
             crosshair.GetComponent<Crosshair>().color = new Color32(255, 255, 255, 255);
         }
     }
+    */
 }

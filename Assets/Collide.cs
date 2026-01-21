@@ -17,7 +17,7 @@ public class Collide : MonoBehaviour
                AudioSource gunEmpty = GetComponent<AudioSource>(); 
                gunEmpty.Play();
             }
-            if(ammo > 0) {
+            else if(ammo > 0) {
                 ammo --; 
             RaycastHit result; 
             Physics.Raycast(ray, out result);
